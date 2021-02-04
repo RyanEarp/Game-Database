@@ -20,7 +20,7 @@ SELECT p.Real_Name, p.age FROM Pro_Players p WHERE p.Rank_Number IN(SELECT tp.Pl
 SELECT p.Real_Name, p.Username FROM Pro_Players p WHERE p.Rank_Number IN(SELECT pt.Player_ID FROM Player_Tournament pt WHERE p.Rank_Number = pt.Player_ID AND pt.Tournament_ID IN(SELECT t.Tournament_ID FROM Tournaments t WHERE pt.Tournament_ID = t.Tournament_ID AND t.Start_Date between '2019-01-01' and '2019-12-31' AND p.Rank_Number NOT IN(SELECT pt2.Player_ID FROM Player_Tournament pt2 WHERE p.Rank_Number = pt2.Player_ID AND pt2.Tournament_ID IN(SELECT t2.Tournament_ID FROM Tournaments t2 WHERE pt2.Tournament_ID = t2.Tournament_ID AND t2.Start_Date between '2018-01-01' and '2018-12-31'))));
 
 # Database Design
-![Image of Design](https://github.com/rearp/GameDatabase/CS 370 - Final Project - Data Model - Ryan Earp, v7-2020-05-03.png
+![Image of Design](https://github.com/rearp/Game-Database/blob/main/CS%20370%20-%20Final%20Project%20-%20Data%20Model%20-%20Ryan%20Earp%2C%20v7-2020-05-03.png)
 
 # Project Status
 This project has been completed.
