@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS Character_Played, Player_Tournament, Rank, Character_Info, Pro_Players, Tournaments;
